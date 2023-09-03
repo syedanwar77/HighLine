@@ -1,0 +1,56 @@
+Let's get your mail going to the right place
+Before we can get your account up and running, you'll need to follow these steps to direct your mail to the right place for highlinehomedecor.com
+
+Log on to your hosting provider or third-party domain name system manager (usually the same place you bought your domain)
+
+Locate the CNAMEs and set the following:
+
+Name	Target
+mobilemail	mobilemail-v01.prod.mesa1.secureserver.net
+pda	mobilemail-v01.prod.mesa1.secureserver.net
+mail	pop.secureserver.net
+pop	pop.secureserver.net
+imap	imap.secureserver.net
+smtp	smtpout.secureserver.net
+webmail	webmail.secureserver.net
+email	email.secureserver.net
+e	email.secureserver.net
+
+Locate the MX and set the following:
+
+Host	Priority	Target
+@	0	smtp.secureserver.net
+@	10	mailstore1.secureserver.net
+
+Locate the SRV and set the following:
+
+Port	Protocol	Name	Service	Priority	Weight	Target
+443	_tcp	@	_autodiscover	100	1	autodiscover.secureserver.net
+
+Locate the TXT and set the following:
+
+Name	TXT Value
+@	D2789557
+@	v=spf1 include:secureserver.net -all
+
+
+Email server settings
+Server	SSL Port
+Incoming server (IMAP):
+imap.secureserver.net
+993
+Incoming server (POP3):
+pop.secureserver.net
+995
+Outgoing server (SMTP):
+smtpout.secureserver.net
+465
+
+
+Mujeeb Khan
+Highline Home Decor, proprietor
++91 9008311281
+Sultanpalya
+RT Nagar
+Bengaluru, Karnataka 560032
+http://www.highlinehomedecor.com
